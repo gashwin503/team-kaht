@@ -1,0 +1,117 @@
+{
+  "n_layers": 24,
+  "math_specific_total": 384727,
+  "finance_specific_total": 256335,
+  "shared_calc_total": 241080,
+  "subsample_layers": [
+    {
+      "layer": 0,
+      "module": "model.layers.0.mlp.down_proj",
+      "params": 4358144,
+      "math_topk": 29062,
+      "finance_topk": 22879,
+      "nonfin_topk": 22574,
+      "math_specific": 15277,
+      "finance_specific": 6931,
+      "shared_calc": 12755,
+      "math_and_finance": 13836,
+      "math_not_finance": 15226,
+      "finance_not_math": 9043
+    },
+    {
+      "layer": 5,
+      "module": "model.layers.5.mlp.down_proj",
+      "params": 4358144,
+      "math_topk": 32528,
+      "finance_topk": 31565,
+      "nonfin_topk": 29135,
+      "math_specific": 18348,
+      "finance_specific": 17325,
+      "shared_calc": 10021,
+      "math_and_finance": 12475,
+      "math_not_finance": 20053,
+      "finance_not_math": 19090
+    },
+    {
+      "layer": 12,
+      "module": "model.layers.12.mlp.down_proj",
+      "params": 4358144,
+      "math_topk": 24269,
+      "finance_topk": 21557,
+      "nonfin_topk": 23075,
+      "math_specific": 14267,
+      "finance_specific": 6758,
+      "shared_calc": 8122,
+      "math_and_finance": 9971,
+      "math_not_finance": 14298,
+      "finance_not_math": 11586
+    },
+    {
+      "layer": 21,
+      "module": "model.layers.21.mlp.down_proj",
+      "params": 4358144,
+      "math_topk": 29709,
+      "finance_topk": 29399,
+      "nonfin_topk": 26080,
+      "math_specific": 18413,
+      "finance_specific": 18074,
+      "shared_calc": 7101,
+      "math_and_finance": 8530,
+      "math_not_finance": 21179,
+      "finance_not_math": 20869
+    },
+    {
+      "layer": 23,
+      "module": "model.layers.23.mlp.down_proj",
+      "params": 4358144,
+      "math_topk": 14738,
+      "finance_topk": 13212,
+      "nonfin_topk": 11577,
+      "math_specific": 7540,
+      "finance_specific": 5348,
+      "shared_calc": 6231,
+      "math_and_finance": 7457,
+      "math_not_finance": 7281,
+      "finance_not_math": 5755
+    }
+  ],
+  "reference_mismatches": [],
+  "overlap_matches_reference": true,
+  "pruning_cardinality": [
+    {
+      "layer": 0,
+      "finance_specific": 6931,
+      "random_same_count": true,
+      "zeros_match_mask": true,
+      "restore_ok": true
+    },
+    {
+      "layer": 5,
+      "finance_specific": 17325,
+      "random_same_count": true,
+      "zeros_match_mask": true,
+      "restore_ok": true
+    },
+    {
+      "layer": 12,
+      "finance_specific": 6758,
+      "random_same_count": true,
+      "zeros_match_mask": true,
+      "restore_ok": true
+    },
+    {
+      "layer": 21,
+      "finance_specific": 18074,
+      "random_same_count": true,
+      "zeros_match_mask": true,
+      "restore_ok": true
+    },
+    {
+      "layer": 23,
+      "finance_specific": 5348,
+      "random_same_count": true,
+      "zeros_match_mask": true,
+      "restore_ok": true
+    }
+  ]
+}
